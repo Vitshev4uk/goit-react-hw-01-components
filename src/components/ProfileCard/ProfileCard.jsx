@@ -1,10 +1,6 @@
 import user from 'data/user.json';
+import PropTypes from "prop-types";
 import css from 'components/ProfileCard/ProfileCard.module.css'
-
-const tag = user.tag
-console.log(tag);
-console.log(1234)
-
 
 const ProfileCard = () => {
     return <div className={css.profile}>
@@ -35,5 +31,15 @@ const ProfileCard = () => {
   </ul>
 </div>
 };
+
+ProfileCard.propTypes = {
+  // avatar: PropTypes.img,
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number
+}
 
 export default ProfileCard;
