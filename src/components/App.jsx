@@ -1,3 +1,5 @@
+import ProfileCard from "./ProfileCard/ProfileCard";
+
 export const App = () => {
   return (
     <div
@@ -10,7 +12,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template  10000 Add
+      <ProfileCard/>
     </div>
   );
 };
