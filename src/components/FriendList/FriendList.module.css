@@ -1,17 +1,63 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .FriendsList {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
+    width: 600px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 .item {
-
+    position: relative;
+    min-width: 100px;
+    text-align: center;
 }
 .status {
-
+    display: block;
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left: 43px;
+}
+.statusOffline {
+    display: block;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left: 43px;
 }
 .avatar {
-
+    margin-top: 20px;
 }
 .name {
-
+    font-size: 25px;
+    font-weight: bold;
 }

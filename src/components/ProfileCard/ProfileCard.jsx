@@ -1,8 +1,8 @@
-import user from 'data/user.json';
+
 import PropTypes from "prop-types";
 import css from 'components/ProfileCard/ProfileCard.module.css'
 
-const ProfileCard = () => {
+const ProfileCard = ({user}) => {
     return <div className={css.profile}>
         <div className={css.description}>
     <img
