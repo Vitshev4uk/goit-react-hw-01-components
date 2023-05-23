@@ -20,10 +20,13 @@ const FriendList = ({ friends }) => {
 };
 
 FriendList.propTypes = {
-  id: PropTypes.number,
-  isOnline: PropTypes.bool,
-  // avatar: PropTypes.img,
-  name: PropTypes.string,
-};
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+       id: PropTypes.number.isRequired,
+       isOnline: PropTypes.bool.isRequired,
+       name: PropTypes.string.isRequired,
+    })
+  )
+}
 
 export default FriendList;
